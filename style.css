@@ -5,22 +5,27 @@
     font-family: 'Inter', sans-serif
 }
 .nav-container{
+    height: 6vw;
     background-color: azure;
     display: flex;
     justify-content:space-between;
-    gap:20px
 }
 .logo img{
-    width: 6%;
+    width: 100%;
     height: 100%;
+    background-color: azure;
 }
 .logo{
+    width: 10%;
     background-color: azure;
 }
 .link{
     text-decoration: none;
-    margin: 0px 20px;
+    margin: 0px 1%;
     color: black;
+}
+.links{
+    padding-top: 5%;
 }
 .icon{
     margin: 0px 10px;
@@ -41,14 +46,23 @@
 }
 .button-header{
     font-size: 1.8rem;
-    background-color: rgb(209, 55, 106);
+    background-color:pink;
     border-radius: 20px;
     padding: 1.2%;
     margin-top:5% ;
+    border: 2px solid pink;
+}
+.button-header:hover{
+    background-color: skyblue;
+    color: aliceblue;
+    border: 2px solid pink;
 }
 .banner img{
     background-image: url(/images/Circle\ design.svg);
     width: 90%;
+}
+.banner img:hover{
+    transform: scale(1.1);
 }
 /* companies start here  */
 .companies-container{
@@ -59,14 +73,22 @@
     justify-content: space-evenly;
     margin: .5% 2.5%;
 }
+.companies img:hover{
+    transform: scale(1.2);
+}
+
 /* companies end here  */
 
 /* popular collection starts */
 .popular{
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    align-items: center;
     margin: 5%;
+}
+.popular-header{
+    font-size: 2.5rem;
+    margin-bottom: 6%;
 }
 .ratings{
     display: flex;
@@ -77,17 +99,70 @@
     grid-template-columns: repeat(3, 1fr);
     gap: 20px;
 }
+.fa-solid {
+    color: gold;
+}
 .card{
-    background-color: bisque;
+    background-color: rgba(245, 245, 245, 0.591);
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    border-radius: 5px;
+    box-shadow: 5px 8px whitesmoke;
+    padding:4%;
+}
+.card-img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.card img{
+    width: 90%;
+    height: 90%;
+}
+.card img:hover{
+   transform: scale(1.1);
+}
+.card-description{
+    padding: 4%;
+}
+/* popular collection ends */
+
+/* featured products */
+.featured{
+    display: flex;
+    justify-content: center;
+    /* width: 90%; */
+    /* margin-left: 5.5%; */
+}
+.featured-description>h1{
+    font-size: 3rem;
+}
+.featured-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 85%;
+}
+.featured-description{
+    padding: 5%;
+}
+/* footer start here  */
+.footer-container{
     display: flex;
     flex-direction: column;
     align-items: center;
-    border-radius: 5px;
-}
-.card>img{
-    width: 90%;
-}
-.card-description{
+    background-color: black;
+    color:white;
     padding: 5%;
 }
-/* popular collection ends */
+.profile{
+    margin:0px 15px;
+}
+.fa-brands{
+    color: aliceblue;
+    font-size: 25px;
+}
+.fa-brands:hover{
+     color:rgb(237, 98, 210);
+}
